@@ -1,5 +1,7 @@
 *{
     font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
 }
 
 .register{
@@ -149,3 +151,34 @@ h1{
     color: #fff;
     margin-left: 54px;
 }
+
+/* CSS lainnya seperti sebelumnya */
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+/* CSS lainnya seperti sebelumnya */
+
+#preview-container {
+    text-align: center;
+}
+
+#image-preview {
+    display: none;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 10px auto;
+}
+
