@@ -384,3 +384,30 @@ button:hover {
     left: -180px;
     
 }
+
+.location-bar {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 180px;
+    position: relative;
+}
+
+.location-bar span {
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+    color: #000000;
+}
+
+.icon-container-loc{
+    float: right;
+    color: #400042;
+    position: relative;
+    left: -180px;
+    bottom: 30px;
+}
