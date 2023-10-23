@@ -17,20 +17,13 @@ h1{
     color: #000000;
 }
 
-.register-form label {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #000000;
-}
-
 .register-form input{
     background: #eaeaea;
     border: 1px solid #eaeaea;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 20px;
     font-size: 10px;
+    height: 42px;
 }
 
 .header h1{
@@ -47,12 +40,13 @@ h1{
 }
 
 .register-form button{
-    width: 100%;
+    width: 170px;
     height: 42px;
     background: #400042;
-    border-radius: 8px;
+    border-radius: 20px;
     color: #fff;
     margin-bottom: 10px;
+    margin-left: 82px;
 }
 
 .register-form p a{
@@ -91,7 +85,7 @@ h1{
     color: #000000;
 }
 
-.login-form label {
+.login-form{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -103,8 +97,10 @@ h1{
     background: #eaeaea;
     border: 1px solid #eaeaea;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 20px;
     font-size: 10px;
+    height: 42px;
+
 }
 
 .header h1{
@@ -121,12 +117,14 @@ h1{
 }
 
 .login-form button{
-    width: 100%;
+    width: 170px;
     height: 42px;
     background: #400042;
-    border-radius: 8px;
+    border-radius: 20px;
     color: #fff;
     margin-bottom: 10px;
+    margin-left: 82px;
+    
 }
 
 .login-form p a{
@@ -306,7 +304,6 @@ input[type="text"] {
     padding: 10px;
     border: none;
     outline: none;
-    margin-left: 30px;
 }
 
 button {
@@ -328,7 +325,6 @@ button:hover {
     color: #000000;
     margin-top: 20px;
     margin-left: 180px;
-    font-weight: bold;
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -396,7 +392,7 @@ button:hover {
     position: relative;
 }
 
-.location-bar span {
+.location-bar span{
     position: absolute;
     left: 10px; 
     top: 50%; 
@@ -411,3 +407,51 @@ button:hover {
     left: -180px;
     bottom: 30px;
 }
+
+.update-title{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px;
+    margin-left: 180px;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+.update-form input{
+    display: flex;
+    background: #eaeaea;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 10px;
+    width: 300px;
+    height: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 550px;
+}
+
+.update-form button{
+    width: 170px;
+    height: 42px;
+    background:  #400042;
+    border-radius: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-left: 610px;
+}
+
+.file-label {
+    cursor: pointer;
+    text-decoration: none;
+    color: #400042;
+    margin-left: 640px;
+    margin-bottom: 30px;
+  }
+  
+  .file-input {
+    display: none;
+  }
