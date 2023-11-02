@@ -468,3 +468,22 @@ button:hover {
   .file-input {
     display: none;
   }
+
+  .container{
+    width: 50%;
+    float: right;
+    margin-top: 30px;
+  }
+
+  .container .title-dashboard{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .container table{
+    margin-top: 10px;
+  }
+
+  .container .tambah i{
+    margin-right: 5px;
+  }
