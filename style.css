@@ -93,6 +93,13 @@ h1{
     color: #000000;
 }
 
+.login-form .form-control{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
 .login-form input{
     background: #eaeaea;
     border: 1px solid #eaeaea;
@@ -296,7 +303,7 @@ body{
     left: 10px; 
     top: 50%; 
     transform: translateY(-50%);
-    color: #000000;
+    color: #b6b6b6;
 }
 
 input[type="text"] {
@@ -304,6 +311,7 @@ input[type="text"] {
     padding: 10px;
     border: none;
     outline: none;
+    margin-left: 20px;
 }
 
 button {
@@ -399,6 +407,7 @@ button:hover {
     transform: translateY(-50%);
     color: #000000;
 }
+
 
 .icon-container-loc{
     float: right;
