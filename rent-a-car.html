@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   </head>
   <body>
     <div class="header">
@@ -36,7 +35,7 @@
       <div class="card">
         <img src="img/car4.png" alt="">
         <div class="card-content">
-          <h3>Sigra<i class="fa-regular fa-heart"></i></h3>
+          <h3>Sigra<i class="icon far fa-heart"></i></h3>
           <div class="info">
             <p><i class="fa-regular fa-user"></i>6 Persons</p>
             <p class="price"><i class="fa-solid fa-dollar-sign"></i>Rp.400.000/day</p>
@@ -47,7 +46,7 @@
       <div class="card">
         <img src="img/car1.png" alt="">
         <div class="card-content">
-          <h3>Pajero<i class="fa-regular fa-heart"></i></h3>
+          <h3>Pajero<i class="icon far fa-heart"></i></h3>
           <div class="info">
             <p><i class="fa-regular fa-user"></i>6 Persons</p>
             <p class="price"><i class="fa-solid fa-dollar-sign"></i>Rp.400.000/day</p>
@@ -58,7 +57,7 @@
       <div class="card">
         <img src="img/car2.png" alt="">
         <div class="card-content">
-          <h3>Hiace<i class="fa-regular fa-heart"></i></h3>
+          <h3>Hiace<i class="icon far fa-heart"></i></i></h3>
           <div class="info">
             <p><i class="fa-regular fa-user"></i>6 Persons</p>
             <p class="price"><i class="fa-solid fa-dollar-sign"></i>Rp.400.000/day</p>
@@ -69,7 +68,7 @@
       <div class="card">
         <img src="img/car5.png" alt="">
         <div class="card-content">
-          <h3>Sigra<i class="fa-regular fa-heart"></i></h3>
+          <h3>Sigra<i class="icon far fa-heart"></i></h3>
           <div class="info">
             <p><i class="fa-regular fa-user"></i>6 Persons</p>
             <p class="price"><i class="fa-solid fa-dollar-sign"></i>Rp.400.000/day</p>
@@ -80,7 +79,7 @@
       <div class="card">
         <img src="img/car6.png" alt="">
         <div class="card-content">
-          <h3>Xpander<i class="fa-regular fa-heart"></i></h3>
+          <h3>Xpander<i class="icon far fa-heart"></i></h3>
           <div class="info">
             <p><i class="fa-regular fa-user"></i>6 Persons</p>
             <p class="price"><i class="fa-solid fa-dollar-sign"></i>Rp.400.000/day</p>
@@ -91,7 +90,7 @@
       <div class="card">
         <img src="img/car7.png" alt="">
         <div class="card-content">
-          <h3>Calya<i class="fa-regular fa-heart"></i></h3>
+          <h3>Calya<i class="icon far fa-heart"></i></h3>
           <div class="info">
             <p><i class="fa-regular fa-user"></i>6 Persons</p>
             <p class="price"><i class="fa-solid fa-dollar-sign"></i>Rp.400.000/day</p>
@@ -100,6 +99,22 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Tambahkan event click pada ikon
+        $('.icon').click(function() {
+          // Periksa apakah ikon memiliki kelas 'far' (fa-regular)
+          if ($(this).hasClass('far')) {
+            // Ganti kelas 'far' (fa-regular) menjadi 'fas' (fa-solid)
+            $(this).removeClass('far').addClass('fas');
+          } else {
+            // Ganti kelas 'fas' (fa-solid) menjadi 'far' (fa-regular)
+            $(this).removeClass('fas').addClass('far');
+          }
+        });
+      });
+    </script>     
   </body>
 </html>

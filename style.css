@@ -287,6 +287,10 @@ body{
     
 }
 
+.icon {
+    cursor: pointer;
+  }
+
 .search-bar {
     display: flex;
     border: 1px solid #ccc;
