@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rating</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">
+        <h4 style="font-weight: bold;">Rating</h4>
+      </div>
+    <div class="icon-container-loc">
+        <i class="fa fa-shopping-cart" style="font-size: 20px;"></i>
+        <i class="fa-regular fa-user" style="font-size: 20px;"></i>
+    </div>
+    </div>
+    <div class="card-container-rating">
+      <div class="card-rating">
+        <div class="card-content-rat">
+          <p>September 26, 2023<br>Rent Code 12345ABC<br>Jeep</p>
+          <div class="info-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <input type="text" style="width: 300px; height: 100px; border-radius: 30px;"><br>
+          <button class="btn">Give Rating</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Tambahkan event click pada ikon
+        $('.icon').click(function() {
+          // Periksa apakah ikon memiliki kelas 'far' (fa-regular)
+          if ($(this).hasClass('far')) {
+            // Ganti kelas 'far' (fa-regular) menjadi 'fas' (fa-solid)
+            $(this).removeClass('far').addClass('fas');
+          } else {
+            // Ganti kelas 'fas' (fa-solid) menjadi 'far' (fa-regular)
+            $(this).removeClass('fas').addClass('far');
+          }
+        });
+      });
+    </script>     
+  </body>
+</html>
